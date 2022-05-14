@@ -2,7 +2,7 @@
 
 #include <avr/io.h>
 
-void PWM_Initialize()
+void PWM_Initialize()            //performing new function
 {
     SET_BIT(DDRD,PD6);
     TCNT0 =0x00;  // Permition to Turning &COUNTER

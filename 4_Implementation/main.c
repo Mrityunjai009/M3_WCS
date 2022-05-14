@@ -36,16 +36,16 @@ int main()
             {
                 Result = READ_ADC(ADC_PIN);  // reading value
 
-                if(Result>25 && Result <=250)
-                    SET_PWM_VALUE(63);
-                else if(Result>251 && Result <=750)
-                    SET_PWM_VALUE(127);
-                 else if(Result>751 && Result <=1023)
-                    SET_PWM_VALUE(191);
-                Table=0;
+                if(Result>25 && Result <=250)   //comparing the values and putting a condition in between 25 to 250
+                    SET_PWM_VALUE(63);          // setting the value of 63
+                else if(Result>251 && Result <=750)   // now putting a condition in between 251 to 750 values
+                    SET_PWM_VALUE(127);                    // setting the value of 127
+                 else if(Result>751 && Result <=1023)       // again putting the condition between 751 to 1023 values
+                    SET_PWM_VALUE(191);                   // setting the value of 191
+                Table=0;                                 // assigining the table value as zero
             }
         }
-        else
+        else                                           // now finally putting else condition to stop timer 
         {
             STOP_TIMER;
             SET_PWM_VALUE(0);
@@ -55,7 +55,7 @@ int main()
     return 0;
 }
 
-ISR(TIMER0_OVF_vect)
+ISR(TIMER0_OVF_vect)                                         //form here new function starts 
 {
     Turning_out++;
     if(Turning_out>=2930)

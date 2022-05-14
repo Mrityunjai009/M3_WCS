@@ -1,7 +1,7 @@
 #include <avr/io.h>
 #include "Turning_on.h"
 
-void TIMER_Initialize()
+void TIMER_Initialize()  // starting new function 
 {
 
     TCNT0 =0x00; // ENABLING TURNING
