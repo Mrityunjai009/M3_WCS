@@ -29,10 +29,10 @@ int main()
 
     while(1)
     {
-        if(!(READ_BIT(PIND,PD2)))  // Condition of switching
+        if(!(READ_BIT(PIND,PD2)))  // Condition of switching and first if condition
         {
             START_TIMER;  // ENABLING THE INTERRUPT
-            if(Table==1)   // complete some(5) sec
+            if(Table==1)   // complete some(5) sec and starting new if condition
             {
                 Result = READ_ADC(ADC_PIN);  // reading value
 
