@@ -23,8 +23,9 @@ conditions (dry, damp, etc.)
  and recalculates the appropriate wipe angle, limiting potential damage to the motor
  
 ## Issues
-wipers don’t wash some areas
-wipers are slow
- wipers make streaks
- wipers are squeaking or juddering
- My windshield wipers will not work
+## Issues
+•	wipers don’t wash some areas
+•	wipers are slow
+•	wipers make streaks
+•	wipers are squeaking or juddering
+•	My windshield wipers will not work
